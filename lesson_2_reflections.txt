@@ -1,0 +1,6 @@
+ What happens when you initialize a reposository?  Why do you need to do it?
+
+Initializing a reposository using "git init" creates the git meta-data files in 
+the .git directory and allows you to begin using git on the local git repository.
+It does not do any checkins.  You need to do it to begin doing any git version
+control.
