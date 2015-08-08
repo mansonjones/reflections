@@ -4,3 +4,11 @@ Initializing a reposository using "git init" creates the git meta-data files in
 the .git directory and allows you to begin using git on the local git repository.
 It does not do any checkins.  You need to do it to begin doing any git version
 control.
+
+ How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+ The staging area is where files exist that are candidates for commits.  The files
+in the staging area are under revision control, but are not part of the official 
+record of the repository.  The working directory is all the files that are not 
+under any revistion control.  The repository is where files are kept that are
+under revision control and have a checkin history.
