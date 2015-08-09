@@ -12,3 +12,33 @@ in the staging area are under revision control, but are not part of the official
 record of the repository.  The working directory is all the files that are not 
 under any revistion control.  The repository is where files are kept that are
 under revision control and have a checkin history.
+
+ How can you use the staging area to make sure you have one commit per logical change?
+By using "git add" to add files, then using "git commit" to add files to the repository.
+You can also use :w!
+
+ What are some situations when branches would be helpful in keeping your history organized?
+How would branches help?
+* Branches allow you to take an earlier version isolate changes to it.
+* Then also allow you to take the latest version and isolate changes to it.
+* Create a new branch when you are switching contexts.
+* The master branch is the production branch that never breaks.
+* Branches are also a good way to "Collaborate with yourself".
+* Or if you get bored.
+* A new feature should be placed on a new branch.
+
+ How do you the diagrams help you visualize the branch structure?
+* It helps because the repository can be traversed as a graph.
+* It allows you to easily see where the branches are created.
+* I'm assuming that merge comes next.
+
+What is the result of merging two branches together?  Why do we represent the diagram
+the way we do?
+The result of merging two branches together represents all the features and bug fixes
+of both branches all together.  The commits are folded into 1, using the timestamp to
+determine the order.
+
+ What are the pros and cons of Git's automatic mergeing vs. always doing merges manually?
+* Git's automatic merging will get it right most of the time.  In those cases where there's
+a conflict you'll need to either figure it out or work with another person.
+* Using Git saves a lot of time.
